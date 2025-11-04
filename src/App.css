@@ -1,38 +1,171 @@
-.App {
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.chat {
+  border: 1px solid #ddd;
+  height: 400px;
+  overflow-y: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.user-msg {
+  text-align: right;
+  margin: 15px 0;
+}
+
+.bot-msg {
+  text-align: left;
+  margin: 15px 0;
+  color: #333;
+}
+
+.upload-section {
+  text-align: center;
+  padding: 30px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background: white;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.invoice-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pdf-button {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pdf-button:hover {
+  background: #45a049;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+.header {
+  background: white;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.user-message {
+  align-self: flex-end;
+  max-width: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bot-message {
+  align-self: flex-start;
+  max-width: 70%;
+}
+
+.message-bubble {
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.user-message .message-bubble {
+  background: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-message .message-bubble {
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upload {
+  background: white;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.upload input {
+  display: none;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background: #0056b3;
+}
+
+.pdf {
+  background: white;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.pdf-button {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pdf-button:hover {
+  background: #218838;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
 }
